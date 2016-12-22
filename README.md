@@ -19,23 +19,23 @@
 
 ### 演示实例效果
 - 演示事例1支持的命令行格式如下 
-> PIN[number]=OUTPUT 设置引脚为输出模式
-> 
-> PIN[number]=INPUT 设置引脚为输入模式
-> 
-> PIN[number]=1 设置引脚为高电平
-> 
-> PIN[number]=0 设置引脚为低电平
-> 
-> PIN[number]=? 读取引脚电平
-> 
-> A[number]=[value] 设置模拟量引脚为指定电平
-> 
-> A[number]=? 读取模拟量引脚电平
-> 
-> quit 退出命令行程序
+1. PIN[number]=OUTPUT 设置引脚为输出模式
 
-![](https://image.png)
+2. PIN[number]=INPUT 设置引脚为输入模式
+ 
+3. PIN[number]=1 设置引脚为高电平
+
+4. PIN[number]=0 设置引脚为低电平
+
+5. PIN[number]=? 读取引脚电平
+
+6. A[number]=[value] 设置模拟量引脚为指定电平
+
+7. A[number]=? 读取模拟量引脚电平
+
+8. quit 退出命令行程序
+
+![](https://github.com/iDalink/ArduinoConnector/blob/master/Commandline/%E6%BC%94%E7%A4%BA%E7%85%A7%E7%89%87.png?raw=true)
 - 演示事例2直接操作GPIO控制1206
 
 ```
@@ -49,12 +49,12 @@
 	displayString(arduino, "Hello,everybody!");
 ```
 
-![](https://image.png)
+![](https://github.com/iDalink/ArduinoConnector/blob/master/ControlToShow1206/%E6%BC%94%E7%A4%BA%E7%85%A7%E7%89%87.png?raw=true)
 - 每个演示目录的Arduino Program目录下的代码都是该演示事例对应的Arduino代码。
 - 进入演示目录下执行make命令编译，或则是执行make run命令编译并运行。注意波特率的设置和串口设备路径。
-> [linux]$ cd Commandline
-> 
-> [linux]$ make run
+#### [linux]$ cd Commandline
+
+#### [linux]$ make run
 
 ### 使用
 - 您可以在自己的项目中引入**ArduinoConnector**目录的代码编译即可。**ArduinoConnector**目录依赖kit目录。同时您需要注意UART波特率的设置。
